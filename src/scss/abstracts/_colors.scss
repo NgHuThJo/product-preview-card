@@ -41,7 +41,7 @@ $contextual-color: (
     "body": $c-orange-200,
     "card": $c-white-000,
     "cta": $c-green-cyan-700,
-    "cta-hover": $c-orange-200,
+    "cta-hover": $c-green-cyan-700 / 0.5,
   ),
 );
 
