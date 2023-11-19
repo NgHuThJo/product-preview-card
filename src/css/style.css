@@ -47,6 +47,7 @@ h4 {
   --bgc-body: 39 38% 92%;
   --bgc-card: 0 0% 100%;
   --bgc-cta: 158 36% 37%;
+  --bgc-cta-hover: 158 50% 20%;
   --ff-body: "Montserrat", sans-serif;
   --ff-heading: "Fraunces", sans-serif;
   --fs-body: 0.875rem;
@@ -2124,4 +2125,7 @@ h6 {
 }
 .cta a::before {
   content: url("../../public/images/icon-cart.svg");
+}
+.cta a:hover {
+  background-color: hsl(var(--bgc-cta-hover));
 }/*# sourceMappingURL=style.css.map */

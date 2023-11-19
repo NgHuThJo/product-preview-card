@@ -50,5 +50,9 @@
         &::before {
             content: url("../../public/images/icon-cart.svg");
         }
+
+        &:hover {
+            background-color: hsl(var(--bgc-cta-hover));
+        }
     }
 }
