@@ -1,0 +1,54 @@
+@use "./abstracts/" as *;
+@use "./base/" as *;
+@use "./components/" as *;
+@use "./layout/" as *;
+@use "./utilities/" as *;
+
+.card {
+    --spacing: 2rem;
+    --bd-rd: 0.5rem;
+
+    @include grid;
+    
+    border-radius: var(--bd-rd);
+    overflow: hidden;
+
+    @include min-query("s") {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    
+.card__info {
+    @include grid(null, null, var(--spacing));
+
+    padding: var(--spacing); 
+}
+
+.responsive {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.price {
+    line-height: 1.1;
+}
+
+.cta {
+    --flex-gap: 1rem;
+
+    a {
+        @include flex(null, center, center, var(--flex-gap));
+
+        padding: 1rem var(--spacing);
+        border-radius: var(--bd-rd);
+        line-height: 1;
+        color: hsl(var(--c-cta));
+        background-color: hsl(var(--bgc-cta));
+
+        &::before {
+            content: url("../../public/images/icon-cart.svg");
+        }
+    }
+}
