@@ -47,7 +47,7 @@ h4 {
   --bgc-body: 39 38% 92%;
   --bgc-card: 0 0% 100%;
   --bgc-cta: 158 36% 37%;
-  --bgc-cta-hover: 158 50% 20%;
+  --bgc-cta-hover: 158 36% 37%/0.5;
   --ff-body: "Montserrat", sans-serif;
   --ff-heading: "Fraunces", sans-serif;
   --fs-body: 0.875rem;
